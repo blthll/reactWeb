@@ -1,8 +1,9 @@
-import React from 'react'
+import React,{form} from 'react'
 import Slider from './Slider';
 import { Link } from "react-router-dom";
 import Header from './Header';
 import Footer from './Footer';
+import { ContactUs } from './ContactUs';
 
 export default function Home() {
   return (
@@ -344,27 +345,7 @@ export default function Home() {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-6 padding_right0">
-              <form id="request" className="main_form">
-                <div className="row">
-                  <div className="col-md-12 ">
-                    <input className="contactus" placeholder="İsim" type="type" name="Name" />
-                  </div>
-                  <div className="col-md-12">
-                    <input className="contactus" placeholder="Telefon" type="type" name="Phone" />
-                  </div>
-                  <div className="col-md-12">
-                    <input className="contactus" placeholder="Email" type="type" name="Email" />
-                  </div>
-                  <div className="col-md-12">
-                    <textarea className="textarea" placeholder="Mesajınız" type="type" message="Name" defaultValue={"Mesajınız"} />
-                  </div>
-                  <div className="col-md-12">
-                    <button className="send_btn">Gönder</button>
-                  </div>
-                </div>
-              </form>
-            </div>
+          <ContactUs />
             <div className="col-md-6 padding_left0">
               <div className="map_main">
                 <div className="map-responsive">
